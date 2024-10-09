@@ -1,0 +1,110 @@
+div.top-imge {
+  position: relative;
+  background-image: url(../images/bac.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (width<1000px) {
+  div.top-imge {
+    background-position: left;
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10%;
+}
+
+.content {
+  font-size: 2rem;
+}
+.content .lifestyle {
+  margin-bottom: 0.3rem;
+}
+.content .men {
+  font-weight: bold;
+  margin-block:0.3rem ;
+}
+.content .free-shipping{
+font-size: 1.5rem;
+
+}
+.content .sale {
+  font-weight: bold;
+margin-block:0.3rem ;
+}
+.content .sale span {
+  margin-left: 1rem;
+  color: var(--red-button);
+}
+.content button {
+  background-color: black;
+  color: #dddddd;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.6rem;
+  border-radius: 3px;
+  margin-top: 0.9rem;
+}
+main section.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem 1.4rem;
+}
+.products .card{
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+  transition: 0.2s;
+}
+ .products .card img{
+  border-radius: 5px 5px 00;
+}
+.products .card:hover{
+  scale: 1.01;
+}
+.content-cart{
+ background-color:#fff ; 
+ border-radius: 0 0 5px 5px;
+}
+.content-cart .title{
+  padding-top: 0.8rem;
+  padding-inline: 0.4rem;
+ text-transform: capitalize;
+}
+.content-cart .description{
+  padding-inline: 0.4rem;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+.content-cart .price{
+  margin-left: 0.88rem;
+  font-size: 0.9rem;
+  color: rgb(255, 0, 0);
+}
+.content-cart .add-to-cart{
+
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  background-color: var(--blue-button);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  gap: 0.6rem;
+  
+  
+}
+.products{
+  padding-top:5rem ;
+}
+
+

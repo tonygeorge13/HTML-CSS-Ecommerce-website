@@ -1,0 +1,129 @@
+body{
+    height: 100vh;
+    display: grid;
+grid-template-rows: auto 1fr auto;
+align-items: center;
+}
+
+
+
+
+header{
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding-block: 0.6rem;
+}
+header a {
+    color: #fff;
+  border-color:#fff ;
+}
+header a:hover {
+    border-color:#fff ;
+
+}
+.cart:hover{
+    border: 1px solid rgb(152, 154, 
+    89);
+    
+}
+.logo:hover{
+    scale: 0.95;
+
+}
+
+
+.product{
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-inline:auto ;
+    border-radius: 4px;
+    font-weight: 500;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    background-color: var(--white);
+    border-top:2px solid var(--blue-button);
+}
+.quantity{
+    display: flex;
+    gap: 5px;
+}
+
+
+& .fa-trash-can {
+    color: var(--red-button);
+    margin-left: 1rem;
+
+   
+}
+button{
+    background: none;
+    border: none;
+}
+.decrease{
+    color: var(--blue-button);
+    font-size: 27px;
+}
+.increase{
+    color: var(--blue-button);
+    font-size: 26px;
+}
+.quantity{
+    background-color: var(--blue-button);
+    color: #fff;
+    font-size: 0.8rem;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    margin-inline: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.clear {
+    background-color: var(--red-button);
+    color: var(--white);
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 6px 5px;
+    font-size: 0.8rem;
+  
+
+}
+.summary {
+  
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+width: 233px;
+margin: auto;
+margin-top:2rem ;
+border-radius: 5px;
+}
+.summary h1 {
+    font-size: 1.2rem;
+    padding-block: 0.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.082);
+}
+
+.totall{
+    display: flex;
+    justify-content: space-between;
+    margin-inline:10px ;
+    margin-block: 0.6rem;
+}
+.checkout{
+    background-color: var(--blue-button);
+    color: #fff;
+   width: 100%;
+   padding-block: 0.6rem;
+   font-size: 0.9rem;
+   font-weight: 500;
+}
+button:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+.summary a {
+    color: red;
+}
